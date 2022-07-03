@@ -1,6 +1,6 @@
 {
   "name": "@whthduck/nestjs-flaword",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A library validate and prevent harmful request if which like a SQL injection, NoSQL injection, Javascript injection",
   "homepage": "https://github.com/whthduck/nestjs-flaword",
   "main": "dist/index.js",
