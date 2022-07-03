@@ -8,7 +8,7 @@ The company's project entered the security testing phase, the team chose the dir
 
 StackHawk reports many High-Risk errors in NoSQL injection, SQL injection, and server-side template injection. To address these vulnerabilities, the team created a Guard Module to detect, prevent, and report API requests which contain malicious code.
 
-After a few days of searching on Npmjs and GitHub, I couldn't find a suitable library for Nodejs and Mongodb, so I researched, and published the Flaword library to the community.
+After a few days of searching on Npmjs and GitHub, I couldn't find a suitable library for Nodejs and Mongodb, so I researched, and published the Flaword library.
 
 ## Installation
 Installation is done using the [npm install command](https://docs.npmjs.com/getting-started/installing-npm-packages-locally):
