@@ -16,9 +16,13 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 12
+          registry-url: https://registry.npmjs.org/
+      - run: yarn && yarn build
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 12
           registry-url: https://npm.pkg.github.com
           scope: '@whthduck'
-      - run: yarn && yarn build
       - name: Pushlish to GIT
         run: yarn publish
         env:
@@ -36,7 +40,6 @@ jobs:
         with:
           node-version: 12
           registry-url: https://registry.npmjs.org/
-          scope: '@whthduck'
       - run: yarn && yarn build
       - name: Pushlish to NPM
         uses: JS-DevTools/npm-publish@v1
