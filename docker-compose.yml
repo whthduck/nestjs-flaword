@@ -1,0 +1,11 @@
+version: '3.3'
+
+services:
+  nestjs-flaword-builder:
+    build: ./
+    image: nestjs-flaword/builder
+    container_name: nestjs-flaword-builder
+    volumes:
+      - ./dist:/usr/src/dist
+    command: "cp -r dist .."
+
